@@ -1,9 +1,8 @@
 //app/api/users/route.tsx
 import { NextResponse } from 'next/server';
-import { User } from '/Users/brandon/Desktop/my stuff/大学/year 4/3cwa/labs/week 5/wk5api/week5-lab2/src/app/types/user';
+import { User } from '../../types/user'
 
 let users: User[] = [];
-let nextUserId = 1; // Initialize user ID counter
 
 // Helper function to find a user by ID
 function findUser(id: number) {
